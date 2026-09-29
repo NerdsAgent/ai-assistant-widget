@@ -5,8 +5,8 @@
  *  Usage:
  *  1. Drop into any HTML or template page:
  *     <script src="chatbot-widget.js"
- *             data-agent-url="https://agent-nerdagent-123-6b2m3i11.local.nerdagent.ai/invocations"
- *             data-agent-key="DT_v_ir4LTZuHUokY4oUrIBHz6PGbvi-Enx8bA_9DuPMyk"
+ *             data-agent-url="https://agent-nerdagent-123-xxx.local.nerdagent.ai/invocations"
+ *             data-agent-key="xxxx"
  *             data-title="ShopAI Assistant"
  *             data-primary-color="#6366f1"
  *             data-position="bottom-right">
@@ -46,7 +46,7 @@
       "https://agent-nerdagent-123-6b2m3i11.local.nerdagent.ai/invocations",
     agentKey:
       currentScript?.getAttribute("data-agent-key") ||
-      "DT_v_ir4LTZuHUokY4oUrIBHz6PGbvi-Enx8bA_9DuPMyk",
+      "xxx-Enx8bA_9DuPMyk",
     title: currentScript?.getAttribute("data-title") || "AI Assistant",
     subtitle: currentScript?.getAttribute("data-subtitle") || "Always active",
     greeting:
@@ -136,7 +136,7 @@
       gain2.connect(state.audioCtx.destination);
       osc2.start(now + 0.1);
       osc2.stop(now + 0.5);
-    } catch (_) {}
+    } catch (_) { }
   }
 
   // Safe Markdown / Text Renderer
@@ -1285,7 +1285,7 @@
             parsed.forEach((m) => renderMessage(m.role, m.text, m.time));
           }
         }
-      } catch (_) {}
+      } catch (_) { }
     }
 
     // Auto-open if configured

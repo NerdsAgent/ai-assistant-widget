@@ -12,7 +12,7 @@ Add this single `<script>` tag right before the closing `</body>` tag on any web
 <script 
   src="chatbot-widget.js"
   data-agent-url="https://agent-nerdagent-123-6b2m3i11.local.nerdagent.ai/invocations"
-  data-agent-key="DT_v_ir4LTZuHUokY4oUrIBHz6PGbvi-Enx8bA_9DuPMyk"
+  data-agent-key="xxx-Enx8bA_9DuPMyk"
   data-title="ShopAI Assistant"
   data-subtitle="Online • Ask me anything"
   data-greeting="Hi! How can I assist you today?"
@@ -123,8 +123,8 @@ export default function RootLayout({ children }) {
         <Script
           src="/chatbot-widget.js"
           strategy="lazyOnload"
-          data-agent-url="https://agent-nerdagent-123-6b2m3i11.local.nerdagent.ai/invocations"
-          data-agent-key="DT_v_ir4LTZuHUokY4oUrIBHz6PGbvi-Enx8bA_9DuPMyk"
+          data-agent-url="https://agent-nerdagent-123-xxx.local.nerdagent.ai/invocations"
+          data-agent-key="xxx-Enx8bA_9DuPMyk"
           data-title="ShopAI Assistant"
         />
       </body>
