@@ -1,0 +1,23 @@
+{
+  "name": "nerd-chat-widget",
+  "version": "1.0.0",
+  "description": "Universal AI agent chatbot widget with expand/shrink modes and Shadow DOM isolation",
+  "main": "chatbot-widget.js",
+  "unpkg": "chatbot-widget.js",
+  "jsdelivr": "chatbot-widget.js",
+  "files": [
+    "chatbot-widget.js",
+    "README.md"
+  ],
+  "keywords": [
+    "chatbot",
+    "widget",
+    "ai",
+    "agent",
+    "assistant",
+    "embeddable",
+    "web-component"
+  ],
+  "author": "",
+  "license": "MIT"
+}
