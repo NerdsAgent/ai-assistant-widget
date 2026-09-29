@@ -3,7 +3,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![Zero Dependencies](https://img.shields.io/badge/dependencies-0-success.svg)](chatbot-widget.js)
 [![Shadow DOM](https://img.shields.io/badge/Shadow%20DOM-Isolated-purple.svg)](chatbot-widget.js)
-[![CDN Ready](https://img.shields.io/badge/CDN-jsDelivr-orange.svg)](https://cdn.jsdelivr.net/gh/NerdsAgent/nerdagent-chatbot@main/chatbot-widget.js)
+[![CDN Ready](https://img.shields.io/badge/CDN-jsDelivr-orange.svg)](https://cdn.jsdelivr.net/gh/NerdsAgent/ai-assistant-widget@main/chatbot-widget.js)
 
 A lightweight, zero-dependency, embeddable AI chatbot widget that you can drop into **any HTML page, Node.js app, or React/Next.js/Vue website**. Built with native Web Components and Shadow DOM isolation to guarantee **zero CSS conflicts** with your website.
 
@@ -33,7 +33,7 @@ Add this single `<script>` tag before the closing `</body>` tag on any webpage:
 
 ```html
 <script 
-  src="https://cdn.jsdelivr.net/gh/NerdsAgent/nerdagent-chatbot@main/chatbot-widget.js"
+  src="https://cdn.jsdelivr.net/gh/NerdsAgent/ai-assistant-widget@main/chatbot-widget.js"
   data-agent-url="https://your-agent-endpoint.com/invocations"
   data-agent-key="YOUR_AGENT_KEY"
   data-title="AI Assistant"
@@ -71,7 +71,7 @@ Add this single `<script>` tag before the closing `</body>` tag on any webpage:
 If you prefer to initialize the widget via JavaScript instead of `data-*` attributes:
 
 ```html
-<script src="https://cdn.jsdelivr.net/gh/NerdsAgent/nerdagent-chatbot@main/chatbot-widget.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/NerdsAgent/ai-assistant-widget@main/chatbot-widget.js"></script>
 
 <script>
   window.ChatbotWidget.init({
@@ -159,7 +159,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body>
         {children}
         <Script
-          src="https://cdn.jsdelivr.net/gh/NerdsAgent/nerdagent-chatbot@main/chatbot-widget.js"
+          src="https://cdn.jsdelivr.net/gh/NerdsAgent/ai-assistant-widget@main/chatbot-widget.js"
           strategy="lazyOnload"
           data-agent-url="https://your-agent-endpoint.com/invocations"
           data-agent-key="YOUR_AGENT_KEY"
@@ -183,7 +183,7 @@ Add the script tag in your `index.html` right before `</body>`:
 <body>
   <div id="root"></div>
   <script 
-    src="https://cdn.jsdelivr.net/gh/NerdsAgent/nerdagent-chatbot@main/chatbot-widget.js"
+    src="https://cdn.jsdelivr.net/gh/NerdsAgent/ai-assistant-widget@main/chatbot-widget.js"
     data-agent-url="https://your-agent-endpoint.com/invocations"
     data-agent-key="YOUR_AGENT_KEY"
     data-title="AI Assistant">
@@ -199,7 +199,7 @@ import { useEffect } from 'react';
 export default function App() {
   useEffect(() => {
     const script = document.createElement('script');
-    script.src = 'https://cdn.jsdelivr.net/gh/NerdsAgent/nerdagent-chatbot@main/chatbot-widget.js';
+    script.src = 'https://cdn.jsdelivr.net/gh/NerdsAgent/ai-assistant-widget@main/chatbot-widget.js';
     script.setAttribute('data-agent-url', 'https://your-agent-endpoint.com/invocations');
     script.setAttribute('data-agent-key', 'YOUR_AGENT_KEY');
     script.setAttribute('data-title', 'AI Assistant');
@@ -227,7 +227,7 @@ export default defineNuxtConfig({
     head: {
       script: [
         {
-          src: 'https://cdn.jsdelivr.net/gh/NerdsAgent/nerdagent-chatbot@main/chatbot-widget.js',
+          src: 'https://cdn.jsdelivr.net/gh/NerdsAgent/ai-assistant-widget@main/chatbot-widget.js',
           'data-agent-url': 'https://your-agent-endpoint.com/invocations',
           'data-agent-key': 'YOUR_AGENT_KEY',
           'data-title': 'AI Assistant',
@@ -248,7 +248,7 @@ export default defineNuxtConfig({
 
 ```html
 <script 
-  src="https://cdn.jsdelivr.net/gh/NerdsAgent/nerdagent-chatbot@main/chatbot-widget.js"
+  src="https://cdn.jsdelivr.net/gh/NerdsAgent/ai-assistant-widget@main/chatbot-widget.js"
   data-agent-url="https://your-agent-endpoint.com/invocations"
   data-agent-key="YOUR_AGENT_KEY"
   data-title="Customer Support"
